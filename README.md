@@ -27,10 +27,17 @@ genresolve/
 
 ## Deployment
 
-1. Open [GenLayer Studio](https://studio.genlayer.com)
-2. Upload `contracts/gen_resolve.py`
-3. Deploy to the GenLayer testnet
-4. Interact via the Studio UI or CLI
+Deploy menggunakan **official GenLayer CLI** (satu-satunya metode yang didukung):
+
+```bash
+# Step 1: Install GenLayer CLI
+npm install -g genlayer
+
+# Step 2: Deploy ke testnet Bradbury
+genlayer deploy contracts/gen_resolve.py
+```
+
+> 💡 Alternatif tanpa CLI: Upload langsung via [GenLayer Studio](https://studio.genlayer.com)
 
 ## Tech Stack
 
@@ -38,3 +45,4 @@ genresolve/
 - **Language**: Python
 - **LLM Calls**: `gl.exec_prompt()`
 - **Consensus**: `gl.eq_principle_strict_eq()` (Optimistic Democracy)
+- **Deploy**: `genlayer` CLI (npm)

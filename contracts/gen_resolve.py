@@ -15,7 +15,7 @@ class GenResolve(gl.Contract):
 
     # --- State Variables ---
     owner: str
-    dispute_count: int
+    dispute_count: bigint
     last_resolution: str
 
     def __init__(self):
@@ -175,7 +175,7 @@ Rules:
     # View Functions (Read-Only)
     # =========================================================================
     @gl.public.view
-    def get_dispute_count(self) -> int:
+    def get_dispute_count(self) -> bigint:
         """Returns the total number of disputes resolved by this contract instance."""
         return self.dispute_count
 
