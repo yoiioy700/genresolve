@@ -33,7 +33,13 @@ Deploy menggunakan **official GenLayer CLI** (satu-satunya metode yang didukung)
 # Step 1: Install GenLayer CLI
 npm install -g genlayer
 
-# Step 2: Deploy ke testnet Bradbury
+# Step 2: Set the network to testnet-bradbury
+genlayer network set testnet-bradbury
+
+# Step 3: Import your wallet account (with private key)
+genlayer account import --name mywallet --private-key YOUR_PRIVATE_KEY_HERE
+
+# Step 4: Deploy to testnet Bradbury
 genlayer deploy contracts/gen_resolve.py
 ```
 
