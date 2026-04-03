@@ -1,7 +1,3 @@
-# { "Depends": "py-genlayer:latest" }
-# GenResolve - AI-Powered Dispute Resolution on GenLayer
-# Hackathon: GenLayer Bradbury (https://dorahacks.io/hackathon/genlayer-bradbury/detail)
-
 from genlayer import *
 import json
 
